@@ -84,7 +84,7 @@ function loadWidget(config) {
 			}, 3000);
 		});
 		let devtools = () => {};
-		console.log("%c", devtools);
+		/*console.log("%c", devtools);*/
 		devtools.toString = () => {
 			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
 		};
@@ -210,7 +210,7 @@ function loadWidget(config) {
 			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
 		} else {
 			loadlive2d("live2d", `${apiPath}get/?id=${modelId}-${modelTexturesId}`);
-			console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
+			/*console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);*/
 		}
 	}
 
